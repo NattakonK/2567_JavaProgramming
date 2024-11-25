@@ -1,4 +1,4 @@
 StudentId:2413110848
 StudentName:Nattakon Khunpileak
-Date:11/18/2024
-Topic:Work with Github
+Date:11/25/2024
+Topic:LabSheet#1: Display, Variable and Input
