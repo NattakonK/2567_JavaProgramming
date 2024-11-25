@@ -1,4 +1,8 @@
 StudentId:2413110848
 StudentName:Nattakon Khunpileak
 Date:11/25/2024
+<<<<<<< HEAD
 Topic:Display, Variable and Input
+=======
+Topic:LabSheet#1: Display, Variable and Input
+>>>>>>> 99688bc541d9c42a42170d1e7e5d0c6b744d10bc
