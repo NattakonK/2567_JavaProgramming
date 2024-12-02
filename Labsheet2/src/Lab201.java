@@ -11,15 +11,15 @@ public class Lab201 {
 		
 		double totalPrice = numberofCustomer * BUFFET;
 		do {
-			isMember = JOptionPane.showConfirmDialog(null, "Total Price is " +totalPrice+ " baht."+"\nDo you have a member Card?");
+			isMember = JOptionPane.showConfirmDialog(null, "Total Price is " + totalPrice + " baht."+"\nDo you have a member Card?");
 			
-			}while(isMember==2);
-		if(isMember==0) {
-			discount = totalPrice *0.90;
-			JOptionPane.showMessageDialog(null, "Amount to be paid is "+frm.format(discount)+ " baht.");
+			}while(isMember == 2);
+		if(isMember == 0) {
+			discount = totalPrice * 0.90;
+			JOptionPane.showMessageDialog(null, "Amount to be paid is "+ frm.format(discount) + " baht.");
 		}
-		else if (isMember==1) {
-			JOptionPane.showMessageDialog(null, "Amount tobe apid is "+frm.format(totalPrice)+" bath.");
+		else if (isMember == 1) {
+			JOptionPane.showMessageDialog(null, "Amount tobe apid is "+ frm.format(totalPrice) +" bath.");
 		}
 	}
 
