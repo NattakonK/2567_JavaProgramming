@@ -8,7 +8,7 @@ public class Lab103 {
     double hourRate = 50.0;
     double minuteRate = 0.25;
     double totalPrice = hours * hourRate + minutes * minuteRate;
-    String message = "You parking "+hours+ " Hour "+minutes+ " Minute."+"\nAmount to be paid is "+totalPrice+" baht.";
+    String message = "You parking "+hours+ " Hour "+ minutes + " Minute."+"\nAmount to be paid is "+totalPrice+" baht.";
     JOptionPane.showMessageDialog(null, message, "Message", JOptionPane.INFORMATION_MESSAGE);
   }
 }

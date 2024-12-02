@@ -3,11 +3,11 @@ import java.text.*;
 public class Lab101 {
   public static void main(String args[]) {
     Scanner scanner = new Scanner(System.in);
-      System.out.print("Input Product Name  : ");
+      System.out.print("Input Product Name  	: ");
       String prodName = scanner.nextLine();
-      System.out.print("Input Product Unit  : ");
+      System.out.print("Input Product Unit  	: ");
       int prodUnit = scanner.nextInt();
-      System.out.print("Input Product Price per unit    : ");
+      System.out.print("Input Price per unit    : ");
       double prodPrice = scanner.nextDouble();
       System.out.println("------------------------------------------");
       double totalPrice = prodUnit*prodPrice;
@@ -19,7 +19,7 @@ public class Lab101 {
       double totalDis = (dis /100) * totalPrice ;
       System.out.println("------------------------------------------");
       double totalAmount = totalPrice - totalDis;
-      System.out.println("Discount from "+dis+"%        "+frm.format(totalDis)+ " baht.");
+      System.out.println("Discount from " +dis+ "%        "+frm.format(totalDis)+ " baht.");
       System.out.println("Amount to be paid         "+frm.format(totalAmount)+" baht.");
       scanner.close();
   }

@@ -23,8 +23,6 @@ public class JavaExample1 {
 		System.out.println("*********Using printf and String.format***********");
 		System.out.printf("Product Nmae is : %s\n",productName);
 		System.out.printf("Total Price is : %,.2f\n",totalPriceProduct);
-		//String formatted = String.format("%,.2f",totalVat);
-		//System.out.printf("ADD VAT 7% is : ",formatted);
 		
 		
 		

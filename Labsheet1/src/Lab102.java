@@ -9,7 +9,7 @@ public class Lab102 {
         int years = minute / minutesInYear;
         int minutes = minute % minutesInYear;
         int days = minutes / minutesInDay;
-        System.out.println(minute + " Minutes is approximately " + years + " year and " + days + " days");
+        System.out.println( minute + " Minutes is approximately " + years + " year and " + days + " days");
         scanner.close();
   }
 }

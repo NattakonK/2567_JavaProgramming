@@ -11,7 +11,7 @@ public class JavaExample1_1 {
 		System.out.println("\n-----OUTPUT-----");
 		System.out.println("First Nmae: "+firstName);
 		System.out.println("Last Nmae : "+lastName);
- 
+		input.close();
 	}
 
 }

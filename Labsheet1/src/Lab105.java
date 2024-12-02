@@ -12,7 +12,7 @@ public class Lab105 {
     double taxPer = taxRate*100;
     //double totalTax = cdSubtotal * taxRate;
     double cdTotal = cdSubtotal * (1+taxRate);
-    String message = "Summary of the transaction:\n\nCD ID:"+cdId+"\nCD TITLE:"+cdTitle+"\nCD Unit Price:$"+cdPrice+"\nCD Quantity:"+cdQuantity+"\n\nSubtotal:$"+cdSubtotal+
+    String message = "Summary of the transaction:\n\nCD ID:"+cdId+"\nCD TITLE:"+ cdTitle +"\nCD Unit Price:$"+cdPrice+"\nCD Quantity:"+cdQuantity+"\n\nSubtotal:$"+cdSubtotal+
     "\nTax rate:"+taxPer+"\nTotal:$"+cdTotal+"\n\nEnd of Program";
    JOptionPane.showMessageDialog(null, message, "Message", JOptionPane.INFORMATION_MESSAGE);
   }
