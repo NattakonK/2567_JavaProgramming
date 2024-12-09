@@ -2,17 +2,14 @@ import java.util.*;
 
 public class IncomeTaxCalculator {
     public static void main(String[] args) {
- 
+    	Scanner scanner = new Scanner(System.in);
         final double TAX_RATE_ABOVE_20K = 0.10;
         final double TAX_RATE_ABOVE_40K = 0.20;
         final double TAX_RATE_ABOVE_60K = 0.30;
  
- 
         int taxableIncome;
         double taxPayable;
 
- 
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the taxable income: $");
         taxableIncome = scanner.nextInt();
  

@@ -2,7 +2,6 @@ import java.util.*;
  
 public class PensionContributionCalculator {
     public static void main(String[] args) {
- 
     	Scanner scanner = new Scanner(System.in);
     	
         final int SALARY_CEILING = 6000;
@@ -15,7 +14,6 @@ public class PensionContributionCalculator {
         final double EMPLOYEE_RATE_65_ABOVE = 0.05;
         final double EMPLOYER_RATE_65_ABOVE = 0.075;
  
-        
         int salary, age;
         int contributableSalary;
         double employeeContribution, employerContribution, totalContribution;
@@ -38,9 +36,7 @@ public class PensionContributionCalculator {
             employeeContribution = contributableSalary * EMPLOYEE_RATE_65_ABOVE;
             employerContribution = contributableSalary * EMPLOYER_RATE_65_ABOVE;
         }
- 
         totalContribution = employeeContribution + employerContribution;
- 
  
         System.out.printf("The employee's contribution is: $%.2f", employeeContribution);
         System.out.printf("The employer's contribution is: $%.2f", employerContribution);

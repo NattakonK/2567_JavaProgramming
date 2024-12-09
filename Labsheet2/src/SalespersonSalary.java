@@ -24,6 +24,8 @@ public class SalespersonSalary {
 		 }
 		 System.out.println("bye.");
 		 System.out.println("All salesperson's salaries have benn compute.");
+		 
+		 input.close();
 	}
 
 }

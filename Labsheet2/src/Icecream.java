@@ -28,10 +28,9 @@ public class Icecream {
                     JOptionPane.showMessageDialog(null,"ERROR: Wrong choice!\nTry again.","ERROR",JOptionPane.ERROR_MESSAGE);
             }
         }
- 
         int toppingChoice = JOptionPane.showConfirmDialog(null,"Do you want to add topping?","Topping",
             JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
- 
+        
         boolean addTopping = (toppingChoice == JOptionPane.YES_OPTION);
  
         int totalPrice = flavorPrice + (addTopping ? TOPPING : 0);
