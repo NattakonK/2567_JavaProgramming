@@ -19,6 +19,7 @@ public class Lab303 {
 		}
 		System.out.println("This sentence has "+count+ " spacebar.");
 		System.out.println("This sentence has "+(count+1)+ " word.");
+		sc.close();
 	}
 
 }
