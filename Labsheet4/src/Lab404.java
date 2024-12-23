@@ -10,19 +10,25 @@ public class Lab404 {
 	       Scanner sc = new Scanner(System.in);
 	       String stuId;
 	       String subjId;
-	       boolean isStudenIDValid, isSubjectIDValid;
+	       boolean isStudentIDValid, isSubjectIDValid;
 
 	       while (true) {
 	           System.out.print("Enter Student Id: ");
 	           stuId = sc.nextLine();
 	           System.out.print("Enter Subject Id: ");
 	           subjId = sc.nextLine();
-	           isStudenIDValid = isLength(stuId, 10);
+	           isStudentIDValid = isLength(stuId, 10);
 	           isSubjectIDValid = isLength(subjId, 7);
 	           break;
 	       }
-	       
-	       displayResult(stuId, subjId);
+	       if (isStudentIDValid && isSubjectIDValid){
+				boolean isITStudent = isITStudent(stuId);
+				boolean isITSubject = isITSubject(subjId);
+				displayData(stuId, subjId, isITStudent,isITSubject);
+	       }
+	       else {
+				System.out.println("");
+			}
 	       sc.close();
 	   }
 	   public static boolean isLength(String input, int length) {
@@ -40,25 +46,16 @@ public class Lab404 {
 	       boolean year = subjectId.charAt(4) == 1;
 	       return major && year;
 	   }
-	   public static void displayResult(String studentId, String subjectId) {
-	       /*if (!isITStudent(studentId)) {
-	           System.out.println("Student ID: " + studentId + " is not a 1st year student in IT.");
+	   public static void displayData(String studentID, String subjectcode, boolean isITStudent, boolean isITSubject) {
+		      
+		   if (isITStudent(studentID)&&isITSubject(studentID)) {
+	           System.out.println("Student ID:  "+ studentID + " is a 1st year student in IT.");
 	           System.out.println("Enroll in courses for Year 1");
-	       } else if (!isITSubject(subjectId)) {
-	           System.out.println("Student ID: " + studentId + " is a 1st year student in IT.");
+	       } else if (!isITSubject(studentID)) {
+	           System.out.println("Student ID: " + studentID + " is a 1st year student in IT.");
 	           System.out.println("Not enroll in courses for Year 1");
 	       }else {
-	    	   System.out.println("Student ID: " + studentId + " is a 1st year student in IT.");
-	           System.out.println("Enroll in courses for Year 1");
-	       }*/
-		   if (isITStudent(studentId)&&isITSubject(subjectId)) {
-	           System.out.println("Student ID:  "+ studentId + " is a 1st year student in IT.");
-	           System.out.println("Enroll in courses for Year 1");
-	       } else if (!isITSubject(subjectId)) {
-	           System.out.println("Student ID: " + studentId + " is a 1st year student in IT.");
-	           System.out.println("Not enroll in courses for Year 1");
-	       }else {
-	    	   System.out.println("Student ID: " + studentId + " is not a 1st year student in IT.");
+	    	   System.out.println("Student ID: " + studentID + " is not a 1st year student in IT.");
 	           System.out.println("Enroll in courses for Year 1");
 	       }
 	   }
