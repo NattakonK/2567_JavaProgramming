@@ -1,4 +1,4 @@
 StudentId:2413110848
 StudentName:Nattakon Khunpileak
-Date:12/16/2024
-Topic:Method
+Date:12/23/2024
+Topic:Array and Array Method
